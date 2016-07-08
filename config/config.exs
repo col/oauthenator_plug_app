@@ -31,11 +31,8 @@ config :oauthenator_app, OauthenatorApp.Repo,
 # And access this configuration in your application as:
 #
 #     Application.get_env(:oauthenator_app, :key)
-#
-# Or configure a 3rd-party app:
-#
-#     config :logger, level: :info
-#
+
+config :logger, level: :warn
 
 # It is also possible to import configuration files, relative to this
 # directory. For example, you can emulate configuration per environment

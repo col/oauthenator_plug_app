@@ -1,6 +1,14 @@
 defmodule OauthenatorApp do
   use Application
 
+  defmacro __using__(_opts) do
+    quote do
+      alias OauthenatorApp.Repo
+      alias OauthenatorApp.Router
+      alias OauthenatorApp.Registration
+    end
+  end
+
   def start(_type, _args) do
     import Supervisor.Spec, warn: false
 
